@@ -54,4 +54,4 @@ GROUPE_BLUFOR_GRAND = [
 ];
 
 //Spawn des hostiles
-execVM "spawn_IA\spawnHostile_1.sqf";
+execVM "spawn_IA\spawnHostile_1.sqf

@@ -30,6 +30,7 @@ class CfgFunctions
 			file="functions\misc";
 			class probaChallenge {};
 			class findClearZoneInArea {};
+			class searchLight {};
 		};
 
 	}

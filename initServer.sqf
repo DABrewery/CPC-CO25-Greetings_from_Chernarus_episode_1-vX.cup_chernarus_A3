@@ -1,6 +1,6 @@
 //PLUTO Opfor
 [
-	opfor,		        //0 camp
+	blufor,		        //0 camp
 	[1000,2000,6000],	//1 revealRange [man,land,air]
 	[1500,2000,3000],	//2 sensorRange [man,land,air]
 	120,			    //3 QRFtimeout
@@ -12,40 +12,45 @@
 	[0,40,100]		    //9 ARTYerror [min,mid,max]
 ] call GDC_fnc_pluto;
 
-gdc_plutoDebug = false;
+gdc_plutoDebug = true;
 
 //On adapte le nombre d'hostiles par rapport au nombre de joueurs
 nbJoueurs = playersNumber east;
 
-/* Ukraine class name :
-rhs_vmf_flora_crew = équipage de blindé
-rhs_vmf_flora_rifleman = rifleman
-rhs_vmf_flora_machinegunner = auto rifleman
-rhs_vmf_flora_machinegunner_assistant = porteur mun/assistant
-rhs_vmf_flora_grenadier = grenadier
-rhs_vmf_flora_LAT = AT (RPG-26)
-rhs_vmf_flora_sergeant = squad leader
-rhs_vmf_flora_junior_sergeant = team leader
-rhs_vmf_flora_officer = officier
-rhs_vmf_flora_medic = médic
-*/
+/* Groups definition */
+	private _fsl    = "rhsgref_cdf_b_reg_rifleman";
+	private _lat    = "rhsgref_cdf_b_reg_rifleman_rpg75";
+	private _aa     = "rhsgref_cdf_b_reg_specialist_aa";
+	private _at     = "rhsgref_cdf_b_reg_grenadier_rpg" ;
+	private _ass_at = "rhsgref_cdf_b_reg_rifleman";
+	private _lmg    = "rhsgref_cdf_b_reg_machinegunner";
+	private _mg     = "rhsgref_cdf_b_reg_machinegunner";
+	private _ass_mg = "rhsgref_cdf_b_reg_rifleman";
+	private _gl     = "rhsgref_cdf_b_reg_grenadier";
+	private _tl     = "rhsgref_cdf_b_reg_squadleader";
+	private _sl     = "rhsgref_cdf_b_reg_officer";
+	private _medic  = "rhsgref_cdf_b_reg_medic";
 
-// Groupes Ukraine. 4 pax (fireteam).
+// Groupes de max 4
 GROUPE_BLUFOR_PETIT = [
-	["rhs_vmf_flora_junior_sergeant","rhs_vmf_flora_LAT","rhs_vmf_flora_rifleman","rhs_vmf_flora_rifleman"],
-	["rhs_vmf_flora_junior_sergeant","rhs_vmf_flora_grenadier","rhs_vmf_flora_LAT","rhs_vmf_flora_rifleman"],
-	["rhs_vmf_flora_junior_sergeant","rhs_vmf_flora_machinegunner","rhs_vmf_flora_machinegunner_assistant","rhs_vmf_flora_LAT"]
+	[_tl, _fsl, _fsl],
+	[_tl, _lat, _fsl],
+	[_tl, _lmg, _fsl],
+	[_tl, _gl, _fsl],
+	[_tl, _lat, _fsl, _fsl],
+	[_tl, _lmg, _fsl, _fsl],
+	[_tl, _gl, _lmg , _fsl],
+	[_tl, _mg, _ass_mg, _fsl]
 ];
-
-// Groupes Ukraine. 8 pax (escouade).
+// Groupes de 8
 GROUPE_BLUFOR_MOYEN = [
-	["rhs_vmf_flora_sergeant", "rhs_vmf_flora_LAT","rhs_vmf_flora_LAT", "rhs_vmf_flora_rifleman", "rhs_vmf_flora_machinegunner_assistant"],
-	["rhs_vmf_flora_machinegunner", "rhs_vmf_flora_grenadier","rhs_vmf_flora_medic"]
+	[_tl, _lat, _lmg, _fsl, _fsl, _fsl, _fsl, _fsl],
+	[_tl, _mg, _ass_mg, _fsl, _fsl, _fsl, _fsl, _fsl],
+	[_tl, _gl, _lmg, _fsl, _fsl, _fsl, _fsl, _fsl]
 ];
-
-// Groupes Ukraine. 14 pax (grosse escouade).
+// Groupe de 14
 GROUPE_BLUFOR_GRAND = [
-	["rhs_vmf_flora_officer","rhs_vmf_flora_medic", "rhs_vmf_flora_sergeant","rhs_vmf_flora_LAT", "rhs_vmf_flora_rifleman", "rhs_vmf_flora_rifleman", "rhs_vmf_flora_junior_sergeant","rhs_vmf_flora_machinegunner","rhs_vmf_flora_machinegunner_assistant","rhs_vmf_flora_grenadier","rhs_vmf_flora_junior_sergeant","rhs_vmf_flora_LAT","rhs_vmf_flora_rifleman","rhs_vmf_flora_rifleman"]
+	[_sl, _medic, _tl, _at, _ass_at, _fsl, _fsl, _tl, _mg, _ass_mg, _fsl, _fsl, _tl, _gl]
 ];
 
 //Spawn des hostiles

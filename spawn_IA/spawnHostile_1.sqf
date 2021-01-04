@@ -5,27 +5,27 @@ private _nbPat = objNull;
 private _probaManedFW = objNull;
 
 switch true do {
-		case (nbJoueurs < 16): {
-			//Entre 8 et 16 pax en garnison
-			_grpGarn = GROUPE_BLUFOR_PETIT;
-			//Entre 6 et 16 pax en patrouille
-			_nbPat = [1,2];
+		case (nbJoueurs < 19): {
+			//16 pax en garnison (+ 8 sur les miradors)
+			_grpGarn = GROUPE_BLUFOR_MOYEN;
+			//Entre 9 et 16 pax en patrouille
+			_nbPat = [3,4];
 			//Proba arme fixe occupée au départ 
 			_probaManedFW = 0.6;
 		};
-		case (nbJoueurs > 17 && nbJoueurs < 20): {
-			//Entre 20 et 28 pax en garnison
+		case (nbJoueurs > 18 && nbJoueurs < 23): {
+			//16 pax en garnison (+ 8 sur les miradors)
 			_grpGarn = GROUPE_BLUFOR_MOYEN;
-			//Entre 8 et 20 pax en patrouille
-			_nbPat = [2,3];
+			//Entre 12 et 20 pax en patrouille
+			_nbPat = [4,5];
 			//Proba arme fixe occupée au départ 
 			_probaManedFW = 0.8;
 		};
-		case (nbJoueurs > 19): {
-			//Entre 32 et 40 pax en garnison
-			_grpGarn = GROUPE_BLUFOR_GRAND;
-			//Entre 10 et 24 pax en patrouille
-			_nbPat = [3,4];
+		case (nbJoueurs > 22): {
+			//16 pax en garnison (+ 8 sur les miradors)
+			_grpGarn = GROUPE_BLUFOR_MOYEN;
+			//Entre 15 et 24 pax en patrouille
+			_nbPat = [5,6];
 			//Proba arme fixe occupée au départ 
 			_probaManedFW = 1;
 		}; 

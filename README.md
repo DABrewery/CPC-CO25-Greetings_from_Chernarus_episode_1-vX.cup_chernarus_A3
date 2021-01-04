@@ -1,4 +1,6 @@
-# a3_mission_template
-tanin69's default mission template for Arma 3 video game
+# Tests à faire
 
-Please, see the wiki to read what has been documented so far
+Script de projecteurs
+Script de mecha
+Adaptation nbre d'hostiles
+Pluto

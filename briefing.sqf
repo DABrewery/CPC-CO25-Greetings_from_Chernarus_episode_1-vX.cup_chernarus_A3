@@ -1,7 +1,7 @@
 ﻿/* Début du briefing au format sqf */
 
 player createDiaryRecord ["Diary", ["Crédits", "
-<font color='#ff0505'>Livonia : classico</font color><br/><br/>
+<font color='#ff0505'>Greetings from Chernarus : épisode 1</font color><br/><br/>
 Auteur : tanin69<br/><br/>
 Une mission de canards, avec LUCY et PLUTO et diverses coquineries.<br/><br/>
 <font color='#ff9605'>Merci à Mystery, Sparfell, Shinriel pour les bibliothèques de GDC_Lib https://github.com/GdC-Framework/GdC_lib/<br/>
@@ -37,7 +37,8 @@ Un détachement US occupe l'aéroport. Attendez-vous à des renforts en provenan
 
 player createDiaryRecord ["Diary", ["Mission", "
 S'assurer que tous les moyens de détection AA à longue portée sur le site <marker name= 'marker_3'>au nord de l'aéroport</marker> sont neutralisés.<br/><br/>
-Il y a un vieux P-37 de conception russe, mais surtout un AN/MPQ-105. Vous pouvez hacker ce dernier, plutôt que de le détruire, mais ce n'est pas obligatoire.
+Il y a un vieux P-37 de conception russe, mais surtout un AN/MPQ-105. Vous pouvez hacker ce dernier, plutôt que de le détruire, mais ce n'est pas obligatoire.<br/><br/>
+Vous n'avez pas besoin de nettoyer la base ni de la contrôler : une unité d'infanterie se chargera du lourd.
 "]];
 
 player createDiaryRecord ["Diary", ["Situation", "

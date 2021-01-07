@@ -8,7 +8,7 @@ class EditorData
 	toggles=1033;
 	class ItemIDProvider
 	{
-		nextID=686;
+		nextID=701;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=35;
+		nextID=38;
 	};
 	class Camera
 	{
-		pos[]={4440.1382,412.58069,10814.467};
-		dir[]={0.21969505,-0.47053519,-0.85473484};
-		up[]={0.11717202,0.88231182,-0.45586964};
-		aside[]={-0.96862227,-3.7500286e-007,-0.24896421};
+		pos[]={3637.5186,380.16797,11571.315};
+		dir[]={0,-0.70710683,0.70710683};
+		up[]={0,0.70710677,0.70710677};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -2450,7 +2450,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4060.6318,370.53522,11780.26};
-						angles[]={-0,5.8905497,0};
+						angles[]={0,5.8905497,0};
 					};
 					side="Empty";
 					flags=4;
@@ -2483,7 +2483,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={4060.6816,371.13257,11780.294};
-						angles[]={-0,3.0344408,0};
+						angles[]={0,3.0344408,0};
 					};
 					side="Empty";
 					flags=4;
@@ -8945,7 +8945,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="";
+							value="_this addEventHandler [""dammaged"", {hint ""Le support aérien a été endommagé ou détruit.\nPlus de support disponible"";supportDispo = false;publicVariable ""supportDispo""}]";
 						};
 					};
 				};
@@ -8983,7 +8983,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="60";
+							value="180";
 						};
 					};
 				};
@@ -9021,7 +9021,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="true";
+							value="supportDispo ";
 						};
 					};
 				};
@@ -9237,7 +9237,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4497.0464,340.58014,9962.1836};
-				angles[]={-0,0.91651589,0};
+				angles[]={0,0.91651589,0};
 			};
 			side="Empty";
 			flags=4;
@@ -9272,7 +9272,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4482.1826,340.59012,9981.6807};
-				angles[]={-0,0.91651589,0};
+				angles[]={0,0.91651589,0};
 			};
 			side="Empty";
 			flags=4;
@@ -9410,7 +9410,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={4487.9219,342.72827,10558.357};
-				angles[]={-0,1.0123732,0};
+				angles[]={0,1.0123732,0};
 			};
 			side="Empty";
 			flags=4;

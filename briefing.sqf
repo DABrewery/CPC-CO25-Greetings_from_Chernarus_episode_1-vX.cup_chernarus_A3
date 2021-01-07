@@ -15,6 +15,16 @@ Quittez la zone cerclée et assurez-vous d'être en sécurité.<br/>
 Faites un appel radio Alpha (0-0-1).<br/>
 "]];
 
+player createDiaryRecord ["Diary", ["Support aérien", "
+Vous disposez d'un support aérien (via SSS). Vous ne pouvez faire appel à ce support que lorsque les deux radars sont neutralisés, sans quoi, il a 100% de chances d'être détruit.<br/><br/>
+<font color='#ff0505'>Disponibilité</font color><br/>
+Le support sera disponible toutes les trois minutes. Si le support est endommagé ou détruit, vous n'aurez plus de support aérien pour le reste de la mission.<br/><br/>
+<font color='#ff0505'>Axe d'approche</font color><br/>
+Le seul axe d'approche sécurisé est par le nord.<br/><br/>
+<font color='#ff0505'>Guidage</font color><br/>
+Vous pouvez guider le support par divers moyens, le plus efficace étant bien entendu le guidage laser (par un drone, par exemple).
+"]];
+
 player createDiaryRecord ["Diary", ["Equipement", "
 AS VAL, 343 et NVG pour tout le monde<br/><br/>
 <font color='#ff0505'>Equipement</font color><br/>
@@ -29,7 +39,7 @@ AS VAL, 343 et NVG pour tout le monde<br/><br/>
 
 player createDiaryRecord ["Diary", ["Renseignements", "
 <font color='#ff0505'>Base radar</font color><br/>
-La base radar est gardée par une garnison des forces chernarusses. Armes légères de type AK et PKP. Il y a également quelques positions d'armes lourdes (M2).<br/><br/>
+La base radar est gardée par une garnison des forces chernarusses. Armes légères de type AK et PKP. Il y a également quelques positions d'armes lourdes (M2). Ils sont au moins deux fois plus nombreux que vous.<br/><br/>
 Patrouilles éparses à proximité immédiate de la base.<br/><br/>
 <font color='#ff0505'>Renforts</font color><br/>
 Un détachement US occupe l'aéroport. Attendez-vous à des renforts en provenance de cette base. Ils ont, notamment, des IFV (M1126 'Stryker').
@@ -38,7 +48,9 @@ Un détachement US occupe l'aéroport. Attendez-vous à des renforts en provenan
 player createDiaryRecord ["Diary", ["Mission", "
 S'assurer que tous les moyens de détection AA à longue portée sur le site <marker name= 'marker_3'>au nord de l'aéroport</marker> sont neutralisés.<br/><br/>
 Il y a un vieux P-37 de conception russe, mais surtout un AN/MPQ-105. Vous pouvez hacker ce dernier, plutôt que de le détruire, mais ce n'est pas obligatoire.<br/><br/>
-Vous n'avez pas besoin de nettoyer la base ni de la contrôler : une unité d'infanterie se chargera du lourd.
+Vous n'avez pas besoin de nettoyer la base ni de la contrôler : une unité d'infanterie se chargera du lourd.<br/><br/>
+D'autre part, il y a aussi à proximité d'un des deux radars un drône. Si vous pouvez le hacker, il pourrait vous être très utile pour guider les tirs du support aérien.<br/><br/>
+Si vous pensez que la zone est suffisamment dégagée, vous pouvez faire appel au support aérien et faire badaboum sur la base radar ou l'aéroport où se trouvent plusieurs cibles d'intérêt. Cet objectif est optionnel.
 "]];
 
 player createDiaryRecord ["Diary", ["Situation", "

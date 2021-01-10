@@ -49,8 +49,10 @@ player createDiaryRecord ["Diary", ["Mission", "
 S'assurer que tous les moyens de détection AA à longue portée sur le site <marker name= 'marker_3'>au nord de l'aéroport</marker> sont neutralisés.<br/><br/>
 Il y a un vieux P-37 de conception russe, mais surtout un AN/MPQ-105. Vous pouvez hacker ce dernier, plutôt que de le détruire, mais ce n'est pas obligatoire.<br/><br/>
 Vous n'avez pas besoin de nettoyer la base ni de la contrôler : une unité d'infanterie se chargera du lourd.<br/><br/>
-D'autre part, il y a aussi à proximité d'un des deux radars un drône. Si vous pouvez le hacker, il pourrait vous être très utile pour guider les tirs du support aérien.<br/><br/>
-Si vous pensez que la zone est suffisamment dégagée, vous pouvez faire appel au support aérien et faire badaboum sur la base radar ou l'aéroport où se trouvent plusieurs cibles d'intérêt. Cet objectif est optionnel.
+Bonus<br/>
+A proximité d'un des deux radars se trouve un drône. Si vous pouvez le hacker, il pourrait vous être utile pour guider les tirs du support aérien.<br/><br/>
+Si vous pensez que la zone est suffisamment dégagée, vous pouvez faire appel au support aérien et faire kaboum sur la base radar ou l'aéroport où se trouvent plusieurs cibles d'intérêt. Cet objectif est optionnel.<br/>
+Donner l'assaut sur l'aéroport ne fait pas partie de vos objectifs. Si vous le faites, ce sera à la fois risqué et long. Mais, après tout, vous êtes de Spetnaz et vous avez l'habitude d'interpéter les ordres à votre convenance.
 "]];
 
 player createDiaryRecord ["Diary", ["Situation", "

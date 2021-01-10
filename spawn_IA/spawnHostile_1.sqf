@@ -38,4 +38,4 @@ switch true do {
 [_zn,_grpGarn, blufor, nil, nil, 0.1, 0.5] spawn int_fnc_spawnGarnisons;
 
 //Spawn des armes fixes
-[_zn,blufor,"RHS_M2StaticMG_D","rhs_vmf_flora_rifleman",1,_probaManedFW,0.8] spawn int_fnc_spawnFixedWeapons;
+[_zn,blufor,"RHS_M2StaticMG_D","rhsgref_cdf_b_reg_rifleman",1,_probaManedFW,0.8] spawn int_fnc_spawnFixedWeapons;

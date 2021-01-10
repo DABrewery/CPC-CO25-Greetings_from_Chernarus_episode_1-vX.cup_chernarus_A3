@@ -12,7 +12,7 @@
 	[0,40,100]		    //9 ARTYerror [min,mid,max]
 ] call GDC_fnc_pluto;
 
-gdc_plutoDebug = true;
+gdc_plutoDebug = false;
 
 //On adapte le nombre d'hostiles par rapport au nombre de joueurs
 nbJoueurs = playersNumber east;

@@ -8,8 +8,9 @@ private _tbMrk = allMapMarkers select {["mrk", _x, true] call BIS_fnc_inString};
 [0.5,"mkr_spawn_static_unit",true,600.0,false,3600.0,true,true,"COLONEL"] call GDC_fnc_lucyInit;
 //["loadout\loadout.sqf"] call GDC_fnc_lucyConfigLoadoutIA;
 
-//Gestion du support aérien SSS
+//Gestion des variables globales
 supportDispo = true;
+alerteGo = false;
 
 //Spawn au choix des joueurs
 ["mk_spawn",[],"LIEUTENANT",["marker_zone_hostile", "marker_nato"]] call GDC_fnc_chooseSpawnPos;

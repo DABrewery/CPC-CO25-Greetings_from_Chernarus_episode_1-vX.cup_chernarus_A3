@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=47;
+		nextID=50;
 	};
 	class Camera
 	{
@@ -387,7 +387,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -442,7 +442,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -4713,7 +4713,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhs_sidor";
+								typeName="rhs_assault_umbts";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -4721,7 +4721,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_100Rnd_762x54mmR_7N13";
-										count=1;
+										count=3;
 										ammoLeft=100;
 									};
 								};
@@ -7011,7 +7011,7 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhs_sidor";
+								typeName="rhs_assault_umbts";
 								isBackpack=1;
 								class MagazineCargo
 								{
@@ -7019,7 +7019,7 @@ class Mission
 									class Item0
 									{
 										name="rhs_100Rnd_762x54mmR_7N13";
-										count=1;
+										count=3;
 										ammoLeft=100;
 									};
 								};

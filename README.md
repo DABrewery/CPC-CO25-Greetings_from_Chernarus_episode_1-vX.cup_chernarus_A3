@@ -7,7 +7,7 @@
 * fixed : SSS was accessible by the drone operator
 * added : maglite for all men
 * added : team roster and inventory in briefing screen
-* added : laser on AS-VAl for the officers and team leaders
+* added : laser on AS-VAL for the officers and team leaders
 * changed : helmet for officers instead of beret
 * changed : minor improvements in the text of the briefing
 

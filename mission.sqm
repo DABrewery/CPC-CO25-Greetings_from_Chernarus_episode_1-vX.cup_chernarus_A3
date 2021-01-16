@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=50;
+		nextID=62;
 	};
 	class Camera
 	{
-		pos[]={4311.8999,366.25436,10761.214};
-		dir[]={-0.7082786,-0.32116124,0.62870508};
-		up[]={-0.24028054,0.94697958,0.21328706};
-		aside[]={0.66387117,-1.2784149e-006,0.74789083};
+		pos[]={3687.1787,399.47653,11563.144};
+		dir[]={0.93145275,-0.10776394,0.34760997};
+		up[]={0.10100868,0.99417156,0.037695974};
+		aside[]={0.34964567,-2.3841858e-007,-0.93690687};
 	};
 };
 binarizationWanted=0;
@@ -55,7 +55,6 @@ addons[]=
 	"ace_captives",
 	"rhs_sounds",
 	"ace_trenches",
-	"ace_logistics_wirecutter",
 	"rhsgref_c_troops",
 	"CUP_Creatures_StaticWeapons",
 	"A3_Modules_F",
@@ -83,7 +82,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=43;
+		items=42;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -257,120 +256,113 @@ class AddonsMetaData
 		};
 		class Item25
 		{
-			className="ace_logistics_wirecutter";
-			name="ACE3 - Logistics Wire Cutter";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item26
-		{
 			className="rhsgref_c_troops";
 			name="GREF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item27
+		class Item26
 		{
 			className="CUP_Creatures_StaticWeapons";
 			name="CUP_Creatures_StaticWeapons";
 		};
-		class Item28
+		class Item27
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item29
+		class Item28
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item30
+		class Item29
 		{
 			className="A3_Static_F_Sams";
 			name="Arma 3 Sams - Turrets";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item31
+		class Item30
 		{
 			className="ace_optics";
 			name="ACE3 - Optics";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item32
+		class Item31
 		{
 			className="ace_explosives";
 			name="ACE3 - Explosives";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item33
+		class Item32
 		{
 			className="SSS_module";
 			name="module";
 			author="Simplex Team";
 			url="https://github.com/SceptreOfficial/Simplex-Support-Services";
 		};
-		class Item34
+		class Item33
 		{
 			className="rhsusf_c_troops";
 			name="RHSUSF Infantry & Equipment";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item35
+		class Item34
 		{
 			className="rhsusf_c_m1a1";
 			name="M1A1 Tanks";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item36
+		class Item35
 		{
 			className="RHS_US_A2_AirImport";
 			name="RHSUSF A2 Air Ports";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item37
+		class Item36
 		{
 			className="rhsusf_c_statics";
 			name="RHSUSF Static Weapons";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item38
+		class Item37
 		{
 			className="rhsusf_c_weapons";
 			name="RHSUSF Weapons & Accessories";
 			author="Red Hammer Studios";
 			url="http://www.rhsmods.org/";
 		};
-		class Item39
+		class Item38
 		{
 			className="ace_compat_rhs_usf3";
 			name="ACE3 - RHS USF Compatibility";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item40
+		class Item39
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
 			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
-		class Item41
+		class Item40
 		{
 			className="rhsusf_vehicles";
 			name="rhsusf_vehicles";
 		};
-		class Item42
+		class Item41
 		{
 			className="rhsusf_c_stryker";
 			name="IAV Stryker vehicles";
@@ -465,6 +457,25 @@ class CustomAttributes
 			};
 		};
 		class Attribute1
+		{
+			property="GDC_Roster";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute2
 		{
 			property="cba_settings_hash";
 			expression="false";
@@ -784,7 +795,45 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute2
+		class Attribute3
+		{
+			property="GDC_DeleteSeagull";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute4
+		{
+			property="GDC_Inventory";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute5
 		{
 			property="EnableDebugConsole";
 			expression="true";
@@ -803,7 +852,26 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=3;
+		class Attribute6
+		{
+			property="GDC_AcreSpectator";
+			expression="false";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		nAttributes=7;
 	};
 };
 class Mission
@@ -2596,8 +2664,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4018.4861,366.46494,11691.197};
-				angles[]={0,4.1618996,0};
+				position[]={4018.4858,366.46463,11691.197};
+				angles[]={0,4.1618948,0};
 			};
 			side="West";
 			flags=6;
@@ -2608,7 +2676,7 @@ class Mission
 			};
 			id=31;
 			type="rhs_p37_turret_vpvo";
-			atlOffset=-0.26168823;
+			atlOffset=-0.26199341;
 		};
 		class Item3
 		{
@@ -2622,8 +2690,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4020.3611,362.86877,11690.862};
-						angles[]={0,4.1618996,0};
+						position[]={4018.5049,362.87128,11691.275};
+						angles[]={0,4.1618948,0};
 					};
 					side="West";
 					flags=6;
@@ -2632,7 +2700,7 @@ class Mission
 					};
 					id=30;
 					type="rhs_msv_driver";
-					atlOffset=-0.27301025;
+					atlOffset=-0.26199341;
 				};
 			};
 			class Attributes
@@ -2661,7 +2729,7 @@ class Mission
 				};
 			};
 			id=258;
-			atlOffset=-0.26168823;
+			atlOffset=-0.26199341;
 		};
 		class Item4
 		{
@@ -2833,8 +2901,9 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_asval_npz";
+								name="rhs_weap_asval_grip_npz";
 								optics="rhs_acc_rakursPM";
+								flashlight="rhs_acc_perst1ik_ris";
 								class primaryMuzzleMag
 								{
 									name="rhs_20rnd_9x39mm_SP6";
@@ -2898,16 +2967,6 @@ class Mission
 							{
 								typeName="rhs_6b23_crewofficer";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_20rnd_9x39mm_SP5";
-										count=4;
-										ammoLeft=20;
-									};
-								};
 								class ItemCargo
 								{
 									items=4;
@@ -2938,7 +2997,7 @@ class Mission
 							watch="ItemWatch";
 							gps="O_UavTerminal";
 							hmd="rhs_1PN138";
-							headgear="rhs_beret_vdv2";
+							headgear="rhs_6b28_flora";
 						};
 					};
 					id=308;
@@ -3507,8 +3566,9 @@ class Mission
 						{
 							class primaryWeapon
 							{
-								name="rhs_weap_asval_npz";
+								name="rhs_weap_asval_grip_npz";
 								optics="rhs_acc_rakursPM";
+								flashlight="rhs_acc_perst1ik_ris";
 								class primaryMuzzleMag
 								{
 									name="rhs_20rnd_9x39mm_SP6";
@@ -3572,16 +3632,6 @@ class Mission
 							{
 								typeName="rhs_6b23_crewofficer";
 								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="rhs_20rnd_9x39mm_SP5";
-										count=4;
-										ammoLeft=20;
-									};
-								};
 								class ItemCargo
 								{
 									items=4;
@@ -3612,7 +3662,7 @@ class Mission
 							watch="ItemWatch";
 							gps="O_UavTerminal";
 							hmd="rhs_1PN138";
-							headgear="rhs_beanie";
+							headgear="rhs_6b28_flora";
 						};
 					};
 					id=313;
@@ -3905,7 +3955,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -3939,6 +3989,11 @@ class Mission
 									class Item6
 									{
 										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -3982,15 +4037,6 @@ class Mission
 										name="rhs_20rnd_9x39mm_SP5";
 										count=8;
 										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
 									};
 								};
 							};
@@ -4078,7 +4124,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4112,6 +4158,11 @@ class Mission
 									class Item6
 									{
 										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -4155,15 +4206,6 @@ class Mission
 										name="rhs_20rnd_9x39mm_SP5";
 										count=8;
 										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
 									};
 								};
 							};
@@ -4269,7 +4311,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4303,6 +4345,11 @@ class Mission
 									class Item6
 									{
 										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -4346,15 +4393,6 @@ class Mission
 										name="rhs_20rnd_9x39mm_SP5";
 										count=8;
 										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
 									};
 								};
 							};
@@ -4470,7 +4508,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=7;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4499,6 +4537,11 @@ class Mission
 									class Item5
 									{
 										name="ACRE_PRC343";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -4652,7 +4695,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4687,6 +4730,11 @@ class Mission
 									{
 										name="ACE_EntrenchingTool";
 										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
+										count=2;
 									};
 								};
 							};
@@ -4723,15 +4771,6 @@ class Mission
 										name="rhs_100Rnd_762x54mmR_7N13";
 										count=3;
 										ammoLeft=100;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
 									};
 								};
 							};
@@ -4842,7 +4881,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -4877,6 +4916,11 @@ class Mission
 									{
 										name="ACE_EntrenchingTool";
 										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
+										count=2;
 									};
 								};
 							};
@@ -4925,15 +4969,6 @@ class Mission
 										name="rhs_100Rnd_762x54mmR_7N13";
 										count=1;
 										ammoLeft=100;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
 									};
 								};
 							};
@@ -5981,7 +6016,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACRE_PRC148";
@@ -6015,6 +6050,11 @@ class Mission
 									class Item6
 									{
 										name="ACE_tourniquet";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -6136,7 +6176,6 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="call{this setUnitTrait [""UAVHacker"",true];}";
 						name="p1_1";
 						description="Expert explosifs";
 						isPlayable=1;
@@ -6158,7 +6197,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6194,6 +6233,11 @@ class Mission
 										name="ACE_EntrenchingTool";
 										count=1;
 									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
+										count=1;
+									};
 								};
 							};
 							class vest
@@ -6225,11 +6269,11 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhs_sidor";
+								typeName="rhs_assault_umbts";
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=2;
+									items=3;
 									class Item0
 									{
 										name="rhs_20rnd_9x39mm_SP5";
@@ -6242,16 +6286,17 @@ class Mission
 										count=2;
 										ammoLeft=1;
 									};
+									class Item2
+									{
+										name="SatchelCharge_Remote_Mag";
+										count=1;
+										ammoLeft=1;
+									};
 								};
 								class ItemCargo
 								{
-									items=2;
+									items=1;
 									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
-									};
-									class Item1
 									{
 										name="ACE_Clacker";
 										count=1;
@@ -6380,7 +6425,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6414,6 +6459,11 @@ class Mission
 									class Item6
 									{
 										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -6457,15 +6507,6 @@ class Mission
 										name="rhs_20rnd_9x39mm_SP5";
 										count=8;
 										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
 									};
 								};
 							};
@@ -6571,7 +6612,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6605,6 +6646,11 @@ class Mission
 									class Item6
 									{
 										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -6648,15 +6694,6 @@ class Mission
 										name="rhs_20rnd_9x39mm_SP5";
 										count=8;
 										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
 									};
 								};
 							};
@@ -6762,7 +6799,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=7;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6791,6 +6828,11 @@ class Mission
 									class Item5
 									{
 										name="ACRE_PRC343";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -6950,7 +6992,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -6984,6 +7026,11 @@ class Mission
 									class Item6
 									{
 										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -7021,15 +7068,6 @@ class Mission
 										name="rhs_100Rnd_762x54mmR_7N13";
 										count=3;
 										ammoLeft=100;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
 									};
 								};
 							};
@@ -7140,7 +7178,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7174,6 +7212,11 @@ class Mission
 									class Item6
 									{
 										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -7223,15 +7266,6 @@ class Mission
 										name="rhs_100Rnd_762x54mmR_7N13";
 										count=1;
 										ammoLeft=100;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
 									};
 								};
 							};
@@ -7531,7 +7565,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7567,6 +7601,11 @@ class Mission
 										name="ACE_EntrenchingTool";
 										count=1;
 									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
+										count=1;
+									};
 								};
 							};
 							class vest
@@ -7598,11 +7637,11 @@ class Mission
 							};
 							class backpack
 							{
-								typeName="rhs_sidor";
+								typeName="rhs_assault_umbts";
 								isBackpack=1;
 								class MagazineCargo
 								{
-									items=2;
+									items=3;
 									class Item0
 									{
 										name="rhs_20rnd_9x39mm_SP5";
@@ -7615,16 +7654,17 @@ class Mission
 										count=2;
 										ammoLeft=1;
 									};
+									class Item2
+									{
+										name="SatchelCharge_Remote_Mag";
+										count=1;
+										ammoLeft=1;
+									};
 								};
 								class ItemCargo
 								{
-									items=2;
+									items=1;
 									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
-									};
-									class Item1
 									{
 										name="ACE_Clacker";
 										count=1;
@@ -7733,7 +7773,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7767,6 +7807,11 @@ class Mission
 									class Item6
 									{
 										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -7810,15 +7855,6 @@ class Mission
 										name="rhs_20rnd_9x39mm_SP5";
 										count=8;
 										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
 									};
 								};
 							};
@@ -7925,7 +7961,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -7959,6 +7995,11 @@ class Mission
 									class Item6
 									{
 										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -8002,15 +8043,6 @@ class Mission
 										name="rhs_20rnd_9x39mm_SP5";
 										count=8;
 										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
 									};
 								};
 							};
@@ -8127,7 +8159,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=7;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -8156,6 +8188,11 @@ class Mission
 									class Item5
 									{
 										name="ACRE_PRC343";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -8310,7 +8347,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=7;
+									items=8;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -8344,6 +8381,11 @@ class Mission
 									class Item6
 									{
 										name="ACE_EntrenchingTool";
+										count=1;
+									};
+									class Item7
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -8387,15 +8429,6 @@ class Mission
 										name="rhs_20rnd_9x39mm_SP5";
 										count=8;
 										ammoLeft=20;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="ACE_wirecutter";
-										count=1;
 									};
 								};
 							};
@@ -8501,7 +8534,7 @@ class Mission
 								isBackpack=0;
 								class ItemCargo
 								{
-									items=6;
+									items=7;
 									class Item0
 									{
 										name="ACE_fieldDressing";
@@ -8530,6 +8563,11 @@ class Mission
 									class Item5
 									{
 										name="ACRE_PRC343";
+										count=1;
+									};
+									class Item6
+									{
+										name="ACE_Flashlight_MX991";
 										count=1;
 									};
 								};
@@ -9057,7 +9095,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this addEventHandler [""dammaged"", {hint ""Le support aérien a été endommagé ou détruit.\nPlus de support disponible"";supportDispo = false;publicVariable ""supportDispo""}]";
+							value="_this addEventHandler [""dammaged"", {[""Le support aérien a été endommagé ou détruit.\nPlus de support disponible"";] remoteExec [""hint""]; supportDispo = false;publicVariable ""supportDispo""}]";
 						};
 					};
 				};

@@ -4,7 +4,8 @@ player createDiaryRecord ["Diary", ["Crédits", "
 <font color='#ff0505'>Greetings from Chernarus : épisode 1</font color><br/><br/>
 Auteur : tanin69<br/><br/>
 Une mission de canards, avec LUCY et PLUTO et diverses coquineries.<br/><br/>
-<font color='#ff9605'>Merci à Mystery, Sparfell, Shinriel pour les bibliothèques de GDC_Lib https://github.com/GdC-Framework/GdC_lib/<br/>
+<font color='#ff9605'>Merci à Mystery, Sparfell, Shinriel pour les bibliothèques de GDC_Lib https://github.com/GdC-Framework/GdC_lib/<br/><br/>
+Repo de la mission à https://github.com/Tanin69/CPC-CO25-Greetings_from_Chernarus_episode_1-v1.cup_chernarus_A3
 "]];
 
 player createDiaryRecord ["Diary", ["Insertion et fin de mission", "

@@ -21,7 +21,7 @@ class Header
 // - Nom de la mission
 onLoadName = "нато воняет (l'OTAN, ça pue...)"; 
 // - Texte de description
-onLoadMission = "Мы дадим им второй засранец (...et on va leur faire un deuxième trou du cul.)";
+onLoadMission = "Мы дадим им второй засранец (...et on va leur faire un deuxième trou du cul).";
 // - Image
 loadScreen = "";
 

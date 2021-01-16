@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=62;
+		nextID=65;
 	};
 	class Camera
 	{
 		pos[]={3687.1787,399.47653,11563.144};
-		dir[]={0.93145275,-0.10776394,0.34760997};
-		up[]={0.10100868,0.99417156,0.037695974};
-		aside[]={0.34964567,-2.3841858e-007,-0.93690687};
+		dir[]={-0.10961828,-0.70016426,0.70555574};
+		up[]={-0.10749473,0.71396351,0.69188493};
+		aside[]={0.98817044,-3.5039557e-007,0.15352663};
 	};
 };
 binarizationWanted=0;
@@ -379,7 +379,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -434,7 +434,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -2894,7 +2894,7 @@ class Mission
 					class Attributes
 					{
 						rank="LIEUTENANT";
-						init="call{this setUnitTrait [""UAVHacker"",true];}";
+						name="cdo";
 						description="Chef d'opération@Commandement";
 						isPlayer=1;
 						class Inventory
@@ -3553,13 +3553,14 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3682.085,360.07242,11588.829};
+						position[]={3682.085,360.0719,11588.83};
 					};
 					side="East";
 					flags=5;
 					class Attributes
 					{
 						rank="SERGEANT";
+						name="oa";
 						description="Second officier";
 						isPlayable=1;
 						class Inventory
@@ -3667,7 +3668,7 @@ class Mission
 					};
 					id=313;
 					type="rhs_vdv_flora_officer_armored";
-					atlOffset=0.00048828125;
+					atlOffset=-3.0517578e-005;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -9038,7 +9039,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="O_UavTerminal";
+							value="";
 						};
 					};
 				};
@@ -9095,7 +9096,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="_this addEventHandler [""dammaged"", {[""Le support aérien a été endommagé ou détruit.\nPlus de support disponible"";] remoteExec [""hint""]; supportDispo = false;publicVariable ""supportDispo""}]";
+							value="_this addEventHandler [""dammaged"", {""Le support aérien a été endommagé ou détruit.\nPlus de support disponible."" remoteExec [""hint""]; supportDispo = false;publicVariable ""supportDispo""}]";
 						};
 					};
 				};
@@ -9171,7 +9172,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="supportDispo ";
+							value="supportDispo  && player in [cdo,oa]";
 						};
 					};
 				};

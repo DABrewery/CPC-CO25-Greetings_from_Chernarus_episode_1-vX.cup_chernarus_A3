@@ -2,7 +2,7 @@
 
 ## 16/01/201 : v2
 
-* fixed : wired fences surrounding the base are not compatible with ACE wire cutter action. -> removed wire cutter from players loadout and added  cherges to explosive experts loadout
+* fixed : wired fences surrounding the base are not compatible with ACE wire cutter action. -> removed wire cutter from players loadout and added charges to explosive experts loadout
 * fixed : hint message informing the player that the aerian support has been damaged didn't show
 * fixed : SSS was accessible by the drone operator
 * added : maglite for all men

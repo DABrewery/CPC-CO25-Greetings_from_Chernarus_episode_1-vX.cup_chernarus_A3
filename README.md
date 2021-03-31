@@ -1,6 +1,6 @@
 # Change log
 
-## 2 - 16/01/20
+## 2 - 2021-01-16
 
 ### Changed
 
@@ -20,4 +20,6 @@
 * hint message informing the player that the aerian support has been damaged didn't show
 * SSS was accessible by the drone operator
 
-## 14/01/2021 : v1, initial release
+## 1 - 2021-01-14
+
+initial release
